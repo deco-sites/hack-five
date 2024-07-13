@@ -21,7 +21,7 @@ export default function PetsCarousel({
         ))}
       />
       <Icon
-        class="hidden md:block absolute right-0 translate-x-[20px] group-hover:translate-x-[0] transition duration-300 ease-in-out"
+        class="hidden md:block absolute right-0"
         id="white-cat-outline"
         height={50}
         width={50}
