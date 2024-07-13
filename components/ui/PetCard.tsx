@@ -30,8 +30,8 @@ const PetCard = ({
   location = "Benvenuto",
   age = "2 years",
 }: Props) => (
-  <div class="flex w-full ml-4 mb-2 space-y-3.5 flex-col w-full p-5 rounded-lg border-2 shadow-[-4px_4px_0px_rgba(0,0,0)] border-black">
-    <Image class="w-[200px]" src={imageUrl} width={100} height={100} />
+  <div class="flex max-w-[350px] w-full mb-2 space-y-3.5 flex-col w-full p-5 rounded-lg border-2 shadow-[-4px_4px_0px_rgba(0,0,0)] border-black">
+    <Image class="w-full" src={imageUrl} width={100} height={100} />
     <p class="text-2xl font-bold">{name}</p>
     <div class="flex space-x-2">
       <LocationBadge text={location} />

@@ -16,9 +16,10 @@ import * as $$$$$$7 from "./sections/ImageWithParagraph.tsx";
 import * as $$$$$$8 from "./sections/Landing.tsx";
 import * as $$$$$$9 from "./sections/Logos.tsx";
 import * as $$$$$$10 from "./sections/MainPost.tsx";
-import * as $$$$$$11 from "./sections/PetsCarousel.tsx";
-import * as $$$$$$12 from "./sections/Testimonials.tsx";
-import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$11 from "./sections/Pets.tsx";
+import * as $$$$$$12 from "./sections/PetsCarousel.tsx";
+import * as $$$$$$13 from "./sections/Testimonials.tsx";
+import * as $$$$$$14 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
@@ -36,9 +37,10 @@ const manifest = {
     "site/sections/Landing.tsx": $$$$$$8,
     "site/sections/Logos.tsx": $$$$$$9,
     "site/sections/MainPost.tsx": $$$$$$10,
-    "site/sections/PetsCarousel.tsx": $$$$$$11,
-    "site/sections/Testimonials.tsx": $$$$$$12,
-    "site/sections/Theme/Theme.tsx": $$$$$$13,
+    "site/sections/Pets.tsx": $$$$$$11,
+    "site/sections/PetsCarousel.tsx": $$$$$$12,
+    "site/sections/Testimonials.tsx": $$$$$$13,
+    "site/sections/Theme/Theme.tsx": $$$$$$14,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,
