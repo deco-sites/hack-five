@@ -147,5 +147,17 @@
   "/.deco/blocks/Vanilla.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/UPers.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FLanding.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Landing.tsx"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2Fbb73549fabb4.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
   }
 }

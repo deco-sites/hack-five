@@ -34,7 +34,7 @@ export default function HeroFlats({
 }: Props) {
   return (
     <div>
-      <div class="flex flex-col gap-8 items-center mx-auto">
+      <div class="flex bg-success text-base flex-col gap-8 items-center mx-auto">
         <div
           class={`flex w-full xl:container xl:mx-auto py-20 mx-5 md:mx-10 z-10 ${
             image
@@ -61,7 +61,7 @@ export default function HeroFlats({
             }`}
           >
             <div
-              class="font-medium inline-block leading-[100%] lg:text-[80px] text-4xl tracking-[-2.4px]"
+              class="font-medium inline-block text-white leading-[100%] lg:text-[80px] text-4xl tracking-[-2.4px]"
               dangerouslySetInnerHTML={{
                 __html: title,
               }}

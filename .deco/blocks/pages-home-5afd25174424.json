@@ -2,11 +2,14 @@
   "name": "Home",
   "path": "/",
   "sections": [
-    { "__resolveType": "Header" },
+    {
+      "__resolveType": "site/sections/Landing.tsx",
+      "name": "vacas",
+      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/faaf5a37-c027-4bac-958e-f879f62133c4"
+    },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "description": "This text is entirely editable, tailor it freely."
+      "title": "<p>O sistema de registro<br>de animais da UFCG<br>Campina Grande</p>"
     },
     {
       "__resolveType": "site/sections/MainPost.tsx",
@@ -17,9 +20,17 @@
     },
     {
       "__resolveType": "site/sections/BlogPosts.tsx",
-      "posts": { "__resolveType": "blog/loaders/BlogpostList.ts", "count": 6 }
+      "posts": {
+        "__resolveType": "blog/loaders/BlogpostList.ts",
+        "count": 6
+      }
     },
-    { "__resolveType": "Footer" }
+    {
+      "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "Faq - default"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
