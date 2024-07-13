@@ -75,7 +75,7 @@ export default function BlogPosts({
         </div>
         <div class="flex-auto border-primary border-t">
           {questions?.map((question) => (
-            <details class="border-primary border-b group">
+            <details class="border-primary border border- group">
               <summary class="text-lg cursor-pointer py-6 flex ">
                 <span class="flex-auto">{question.title}</span>
                 <span class="flex-none transition group-open:rotate-180">
