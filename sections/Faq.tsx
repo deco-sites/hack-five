@@ -1,5 +1,8 @@
 import Icon from "site/components/ui/Icon.tsx";
 
+/**
+ * @title {{{title}}}
+ */
 export interface Question {
   title: string;
   /** @format rich-text */
@@ -71,10 +74,10 @@ export default function BlogPosts({
                   </svg>
                 </span>
               </summary>
-              <p
+              <div
                 class="leading-relaxed mb-6 group-open:animate-fadeIn"
                 dangerouslySetInnerHTML={{ __html: question.answer }}
-              ></p>
+              ></div>
             </details>
           ))}
         </div>
