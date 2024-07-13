@@ -8,10 +8,12 @@ export interface Props {
   
 export default function Video({ video, background }: Props) {
   return (
-    <div class="flex justify-center bg-contain bg-no-repeat bg-center h-screen" style={{ backgroundImage: `url(${background})` }}>
-        <video class="w-full max-w-64" controls>
-          <source src={video}></source>
-        </video>
+    <div class="flex items-center justify-center bg-contain bg-no-repeat bg-center h-screen bg-[#636FFF]" style={{ backgroundImage: `url(${background})` }}>
+        <div class="flex rotate-[-1deg] pt-32 size-8/12 justify-center">
+          <video class="h-full" controls>
+            <source src={video}></source>
+          </video>
+        </div>
     </div>
 );
 }
