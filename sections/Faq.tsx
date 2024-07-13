@@ -1,9 +1,4 @@
-export interface CTA {
-  id?: string;
-  href: string;
-  text: string;
-  outline?: boolean;
-}
+import Icon from "site/components/ui/Icon.tsx";
 
 export interface Question {
   title: string;
@@ -14,15 +9,12 @@ export interface Question {
 export interface Props {
   title?: string;
   description?: string;
-  cta?: CTA;
   questions?: Question[];
 }
 
 export default function BlogPosts({
   title = "FAQs",
-  description =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-  cta = { id: "change-me", href: "/", text: "Change me", outline: true },
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
   questions = [
     {
       title: "Question #1 text goes here",
@@ -52,31 +44,16 @@ export default function BlogPosts({
   ],
 }: Props) {
   return (
-    <div class="container lg:mx-auto mx-4 text-sm py-12 lg:py-28">
-      <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-between">
-        <div class="flex-none space-y-6 lg:w-2/5">
-          <p class="text-4xl leading-snug">
-            {title}
-          </p>
-          <p class="text-lg">
-            {description}
-          </p>
-          <a
-            key={cta?.id}
-            id={cta?.id}
-            href={cta?.href}
-            target={cta?.href.includes("http") ? "_blank" : "_self"}
-            class={`font-normal btn btn-primary ${
-              cta.outline && "btn-outline"
-            }`}
-          >
-            {cta?.text}
-          </a>
+    <div class="relative group overflow-hidden flex flex-col items-center text-sm pt-8 pb-12 px-4">
+      <div class="flex flex-col items-center w-full max-w-[1000px] gap-10 justify-between">
+        <div class="flex flex-col items-center space-y-6">
+          <p class="text-4xl leading-snug font-bold">{title}</p>
+          <p class="text-lg">{description}</p>
         </div>
-        <div class="flex-auto border-primary border-t">
+        <div class="flex flex-col gap-2 border-success w-full">
           {questions?.map((question) => (
-            <details class="border-primary border border- group">
-              <summary class="text-lg cursor-pointer py-6 flex ">
+            <details class="border-primary px-4 rounded-md border border-success group shadow-[-4px_4px_0px_rgba(0,0,0)]">
+              <summary class="flex items-center justify-between text-lg cursor-pointer py-3 flex ">
                 <span class="flex-auto">{question.title}</span>
                 <span class="flex-none transition group-open:rotate-180">
                   <svg
@@ -97,12 +74,17 @@ export default function BlogPosts({
               <p
                 class="leading-relaxed mb-6 group-open:animate-fadeIn"
                 dangerouslySetInnerHTML={{ __html: question.answer }}
-              >
-              </p>
+              ></p>
             </details>
           ))}
         </div>
       </div>
+      <Icon
+        class="hidden md:block absolute rotate-180 translate-y-[16px] group-hover:translate-y-0 bottom-0 right-0 transition duration-300 ease-in-out"
+        id="glasses-cat"
+        height={40}
+        width={116}
+      />
     </div>
   );
 }
