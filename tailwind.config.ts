@@ -8,8 +8,8 @@ export default {
     container: { center: true },
     extend: {
       animation: {
-        scroll: "scroll 10s forwards linear infinite",
-        scrollHover: "scroll 10s forwards linear paused infinite"
+        scroll: "scroll 30s forwards linear infinite",
+        scrollHover: "scroll 30s forwards linear paused infinite"
       },
       keyframes: {
         scroll: {
