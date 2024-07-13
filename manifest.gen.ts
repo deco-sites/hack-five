@@ -4,6 +4,7 @@
 
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$0 from "./loaders/getPets.ts";
 import * as $$$$$$0 from "./sections/AboutUs.tsx";
 import * as $$$$$$1 from "./sections/BlogPost.tsx";
 import * as $$$$$$2 from "./sections/BlogPosts.tsx";
@@ -20,6 +21,9 @@ import * as $$$$$$12 from "./sections/Testimonials.tsx";
 import * as $$$$$$13 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/getPets.ts": $$$0,
+  },
   "sections": {
     "site/sections/AboutUs.tsx": $$$$$$0,
     "site/sections/BlogPost.tsx": $$$$$$1,

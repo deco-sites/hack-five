@@ -43,6 +43,7 @@ export type AvailableIcons =
   | "WhatsApp"
   | "XMark"
   | "white-cat"
+  | "white-cat-outline"
   | "glasses-cat"
   | "Zoom";
 

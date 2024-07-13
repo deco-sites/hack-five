@@ -171,5 +171,11 @@
   "/.deco/blocks/Preview%20%2Fsections%2FAboutUs.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/AboutUs.tsx"
+  },
+  "/.deco/blocks/pages-Pets-710762.json": {
+    "name": "Pets",
+    "path": "/pets",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

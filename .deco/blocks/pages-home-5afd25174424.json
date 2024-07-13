@@ -37,7 +37,10 @@
     },
     {
       "__resolveType": "site/sections/PetsCarousel.tsx",
-      "name": "Nossos queridos"
+      "name": "Nossos queridos",
+      "pets": {
+        "__resolveType": "site/loaders/getPets.ts"
+      }
     },
     {
       "__resolveType": "site/sections/MainPost.tsx",
