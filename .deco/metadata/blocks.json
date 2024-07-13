@@ -159,5 +159,13 @@
   "/.deco/blocks/collections%2Fblog%2Fposts%2Fbb73549fabb4.json": {
     "blockType": "loaders",
     "__resolveType": "blog/loaders/Blogpost.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2Ffc797d19a0b8.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FAboutUs.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/AboutUs.tsx"
   }
 }
