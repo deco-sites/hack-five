@@ -6,13 +6,13 @@
     }
   ],
   "seo": {
-    "titleTemplate": "%s | deco.cx",
+    "titleTemplate": "%s | Conheça seu novo amigo",
     "descriptionTemplate": "%s | Deco.cx",
     "type": "website",
-    "title": "Blog",
-    "description": "Improve your page performance with deco.cx",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/c8188deb-9ed0-4394-8ede-af8fb4263ba4",
-    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/71c97b9c-b94a-4cf5-8120-4bb7b99b21bb"
+    "title": "UPets",
+    "description": "Conheça seu novo melhor amigo",
+    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/76423a8e-aeca-4c0b-9051-58ccd5ba83e5",
+    "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/d563ee84-d996-447b-874f-130fb4d8a31c"
   },
   "global": [
     {
