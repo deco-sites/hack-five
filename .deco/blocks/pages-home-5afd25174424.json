@@ -30,6 +30,10 @@
     },
     {
       "__resolveType": "Faq - default"
+    },
+    {
+      "__resolveType": "site/sections/PetsCarousel.tsx",
+      "name": "Test test"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
