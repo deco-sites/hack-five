@@ -36,6 +36,10 @@
       "title": "Quem somos? Qual o nosso objetivo?"
     },
     {
+      "__resolveType": "site/sections/PetsCarousel.tsx",
+      "name": "Nossos queridos"
+    },
+    {
       "__resolveType": "site/sections/MainPost.tsx",
       "post": {
         "__resolveType": "blog/loaders/BlogPostItem.ts",
