@@ -55,6 +55,11 @@
       }
     },
     {
+      "__resolveType": "site/sections/Video.tsx",
+      "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/4167824f-0f93-46fc-ac55-06c7e24795a9",
+      "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/f441c7bd-e851-4b66-b247-47f250ed6766"
+    },
+    {
       "__resolveType": "Faq - default"
     },
     {
