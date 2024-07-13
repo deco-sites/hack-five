@@ -21,7 +21,7 @@ export default function InfiniteScroller({ children} : Props) {
 
   return (
     <div ref={scroller} class="max-w-[100vw] overflow-hidden">
-      <div ref={scrollerInner} class="flex flex-wrap gap-1 overflow-hidden w-max flex-nowrap animate-scroll hover:animate-scrollHover">
+      <div ref={scrollerInner} class="flex flex-wrap gap-4 overflow-hidden w-max flex-nowrap animate-scroll hover:animate-scrollHover">
         {children}
       </div>
     </div>

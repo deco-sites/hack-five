@@ -3,6 +3,16 @@
   "path": "/pets",
   "sections": [
     {
+      "__resolveType": "lending"
+    },
+    {
+      "__resolveType": "site/sections/Pets.tsx",
+      "pets": {
+        "__resolveType": "site/loaders/getPets.ts"
+      },
+      "title": "Nossos amigos"
+    },
+    {
       "__resolveType": "Footer"
     }
   ],
