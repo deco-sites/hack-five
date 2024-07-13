@@ -37,7 +37,7 @@ export default function HeroFlats({
 }: Props) {
   console.log(metrics);
   return (
-    <div class="relative flex bg-success text-base flex-col gap-8 py-8 px-2 md:px-4 items-center mx-auto">
+    <div class="group overflow-hidden relative flex bg-success text-base flex-col gap-8 py-8 px-2 md:px-4 items-center mx-auto">
       <div
         class="max-w-[600px] font-bold inline-block text-white text-center leading-[100%] lg:text-4xl text-4xl"
         dangerouslySetInnerHTML={{
@@ -72,7 +72,12 @@ export default function HeroFlats({
         </div>
       )}
 
-      <Icon class="hidden md:block absolute left-0 rotate-90" id="white-cat" height={48} width={32} />
+      <Icon
+        class="hidden md:block absolute left-0 rotate-90 translate-x-[-16px] group-hover:translate-x-[-2px] transition duration-300 ease-in-out"
+        id="white-cat"
+        height={48}
+        width={48}
+      />
     </div>
   );
 }
