@@ -9,7 +9,31 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>O sistema de registro<br>de animais da UFCG<br>Campina Grande</p>"
+      "title": "<p>O sistema para você conhecer o seu mais novo melhor amigo</p>",
+      "metrics": [
+        {
+          "metric": "+70",
+          "text": "Pets registrados"
+        },
+        {
+          "metric": "200",
+          "text": "Usuários cadastrados"
+        },
+        {
+          "metric": "+30",
+          "text": "Animais adotados"
+        }
+      ],
+      "cta": {
+        "id": "catalog",
+        "href": "/pets",
+        "text": "Conheça nossos amigos"
+      }
+    },
+    {
+      "__resolveType": "site/sections/AboutUs.tsx",
+      "text": "<p>O Upets é um sistema inovador projetado para ajudar você a encontrar seu novo melhor amigo peludo. A plataforma é fácil de usar e permite que você explore uma ampla variedade de animais de estimação, incluindo cães, gatos, roedores e aves, com perfis detalhados que incluem informações sobre <strong>idade</strong>, <strong>temperamento</strong> e<strong> necessidades específicas</strong>. O objetivo do Upets é facilitar a conexão entre pessoas e animais, garantindo que cada pet encontre um lar amoroso e adequado</p>",
+      "title": "Quem somos? Qual o nosso objetivo?"
     },
     {
       "__resolveType": "site/sections/MainPost.tsx",
@@ -26,14 +50,10 @@
       }
     },
     {
-      "__resolveType": "Footer"
-    },
-    {
       "__resolveType": "Faq - default"
     },
     {
-      "__resolveType": "site/sections/PetsCarousel.tsx",
-      "name": "Test test"
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
