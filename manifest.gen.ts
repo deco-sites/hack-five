@@ -21,6 +21,7 @@ import * as $$$$$$12 from "./sections/Pets.tsx";
 import * as $$$$$$13 from "./sections/PetsCarousel.tsx";
 import * as $$$$$$14 from "./sections/Testimonials.tsx";
 import * as $$$$$$15 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$16 from "./sections/Video.tsx";
 
 const manifest = {
   "loaders": {
@@ -43,6 +44,7 @@ const manifest = {
     "site/sections/PetsCarousel.tsx": $$$$$$13,
     "site/sections/Testimonials.tsx": $$$$$$14,
     "site/sections/Theme/Theme.tsx": $$$$$$15,
+    "site/sections/Video.tsx": $$$$$$16,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,
