@@ -181,5 +181,9 @@
   "/.deco/blocks/lending.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Landing.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FChatbot.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Chatbot.tsx"
   }
 }

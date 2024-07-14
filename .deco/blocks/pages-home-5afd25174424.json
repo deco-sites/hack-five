@@ -44,6 +44,10 @@
       "__resolveType": "Faq - default"
     },
     {
+      "__resolveType": "site/sections/Chatbot.tsx",
+      "name": "Test test"
+    },
+    {
       "__resolveType": "Footer"
     }
   ],
