@@ -12,7 +12,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Bella",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/6023b80f-a68f-45cc-92e4-4678aacce31a",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/8fe11a9a-d979-43e9-967f-543adf7213f9",
       location: "Forks",
       age: "2 anos",
       akaList: ['Isa', 'Bellinha'],
@@ -21,7 +21,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Max",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/6fd37040-6e85-44b6-bbaf-435137f47ef7",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/46905e6e-cf5b-42e9-9cf3-b17777f2abb1",
       location: "Omnitrix",
       age: "10 anos",
       akaList: ['Vovô'],  
@@ -30,7 +30,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Luna",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/a7f3b168-d211-443a-a7f8-d327bf6cf573",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/6f652af7-4c96-4012-9b92-84f1e404ded2",
       location: "Hogsmeade",
       age: "1 ano",
       akaList: ['Lulu'],
@@ -39,7 +39,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Charlie",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/8577cc12-d18f-4849-b011-3f911e20fd63",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/440f5191-8e2f-47ef-a43e-688c4554fe52",
       location: "Abrams",
       age: "5 meses",
       akaList: ['Bebê'],
@@ -48,7 +48,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Daisy",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/8d3a3a8a-3e07-4d22-84cb-c95d75968636",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/9fcea190-8d85-4c3a-a810-f3f9ddaf91e1",
       location: "Gatsby",
       age: "5 anos",
       akaList: ['Lulu'],
@@ -57,7 +57,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Rocky",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/1e8fed93-09e6-47f9-9899-ee260f6d55ae",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/4be60961-d416-432e-9045-91ad8e91a478",
       location: "Ringue",
       age: "2 anos",
       akaList: ['Kiki', 'Pedro'],
@@ -66,7 +66,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Molly",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/d723d108-fe8c-4851-b537-0a9b56c7ea8a",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/8a5e1da4-b845-4045-a663-2dd931870d4c",
         location: "Laguinho",
         age: "5 anos",
         akaList: ['Bebê'],
@@ -75,7 +75,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Buddy",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/8fe11a9a-d979-43e9-967f-543adf7213f9",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/d723d108-fe8c-4851-b537-0a9b56c7ea8a",
       location: "Benvenuto",
       age: "3 anos",
       akaList: ['Bu', 'Di'],  
@@ -84,7 +84,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Lucy",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/4c1bfea6-3b5a-4eaa-8801-55efe0a7bdc3",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/b63cca95-161c-464e-be91-4441b24ef41e",
       location: "Ketchum, ID",
       age: "5 meses",
       akaList: ['Geni', 'Daca'],  
@@ -93,7 +93,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Cooper",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/b70b2a44-4db1-4df7-8bcc-1767b9e61c0c",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/6812b4ad-63e2-45e5-a83f-09a288c6c37d",
       location: "CAA",
       age: "5 anos",
       akaList: ['Bebê'],
@@ -102,7 +102,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Chloe",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/879cdf3c-d356-43c6-b978-4d182ee08894",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/3ec62d15-e89d-4c81-915f-385b69ad1a13",
       location: "Arcadia Bay",
       age: "3 anos",
       akaList: ['Momo', 'Max'],  
@@ -111,7 +111,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Bailey",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/1a903ef0-2133-43c3-a4ec-df2b9de9c690",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/6ecbea0f-f1ec-4f24-bf60-bbdd1425bf2a",
       location: "Biblioteca",
       age: "3 anos",
       akaList: ['Bebê'],  
@@ -120,7 +120,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Lola",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/d10dbdff-870e-4aad-9eba-4db524035007",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/c4b1c3a4-27e1-4b05-ba2e-0f763f984a34",
       location: "Humanas",
       age: "4 anos",
       akaList: ['Lolo', 'Lilo', 'Lala'],  
@@ -129,7 +129,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Duke",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/e0ef4da6-0f00-4478-bccd-fbae9dd3e819",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/81ba7640-a12a-4888-8d09-fc6075bc9d74",
       location: "Bloco LSD",
       age: "2 anos",
       akaList: ['Dudu', 'Kikito'],  
@@ -138,7 +138,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Zoe",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/df208710-a5b5-42c5-9647-c66c6c1dc3c1",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/bb4e14c0-0248-4920-9471-d50bcdde4b20",
       location: "RU",
       age: "7 meses",
       akaList: ['Zezé'],
@@ -147,7 +147,7 @@ export default async function getPets(): Promise<Pet[]> {
     {
       name: "Tucker",
       imageSrc:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/7223ef7b-157b-4a1b-896a-ce7c6ffafbb1",
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/1a903ef0-2133-43c3-a4ec-df2b9de9c690",
       location: "Reitoria",
       age: "5 meses",
       akaList: ['Tutu', 'Tuca'],
