@@ -3,7 +3,7 @@
   "path": "/pets",
   "sections": [
     {
-      "__resolveType": "lending"
+      "__resolveType": "LandingP"
     },
     {
       "__resolveType": "site/sections/Pets.tsx",

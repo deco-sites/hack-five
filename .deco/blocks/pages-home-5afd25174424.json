@@ -3,9 +3,7 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/Landing.tsx",
-      "name": "Logo do UPets",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/5ab107d6-2556-455b-9f32-adfc3e35408a"
+      "__resolveType": "LandingP"
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
@@ -32,8 +30,8 @@
     },
     {
       "__resolveType": "site/sections/AboutUs.tsx",
-      "text": "<p>O Upets é um sistema inovador projetado para ajudar você a encontrar seu novo melhor amigo peludo. A plataforma é fácil de usar e permite que você explore uma ampla variedade de animais de estimação, incluindo cães, gatos, roedores e aves, com perfis detalhados que incluem informações sobre <strong>idade</strong>, <strong>temperamento</strong> e<strong> necessidades específicas</strong>. O objetivo do Upets é facilitar a conexão entre pessoas e animais, garantindo que cada pet encontre um lar amoroso e adequado</p>",
-      "title": "Quem somos? Qual o nosso objetivo?"
+      "title": "Quem somos? Qual o nosso objetivo?",
+      "text": "<p>O Upets é um sistema inovador projetado para ajudar você a encontrar seu novo melhor amigo peludo. A plataforma é fácil de usar e permite que você explore uma ampla variedade de animais de estimação, incluindo cães, gatos, roedores e aves, com perfis detalhados que incluem informações sobre <strong>idade</strong>, <strong>temperamento</strong> e<strong> necessidades específicas</strong>. O objetivo do Upets é facilitar a conexão entre pessoas e animais, garantindo que cada pet encontre um lar amoroso e adequado</p>"
     },
     {
       "__resolveType": "site/sections/PetsCarousel.tsx",
@@ -51,9 +49,6 @@
     },
     {
       "__resolveType": "Footer"
-    },
-    {
-      "__resolveType": "lending"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
