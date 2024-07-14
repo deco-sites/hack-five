@@ -45,6 +45,7 @@ export type AvailableIcons =
   | "white-cat"
   | "white-cat-outline"
   | "phone"
+  | "x"
   | "glasses-cat"
   | "Zoom";
 

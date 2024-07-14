@@ -18,14 +18,15 @@ const PetCard = ({
     <Image
       class="w-full"
       preload={true}
-      src={pet.imageSrc}
+      loading={"eager"}
+      src={pet?.imageSrc || ""}
       width={100}
       height={100}
     />
-    <p class="text-2xl font-bold">{pet.name}</p>
+    <p class="text-2xl font-bold">{pet?.name}</p>
     <div class="flex space-x-2">
-      <PurpleBadge>{pet.location}</PurpleBadge>
-      <OrangeBadge>{pet.age}</OrangeBadge>
+      <PurpleBadge>{pet?.location}</PurpleBadge>
+      <OrangeBadge>{pet?.age}</OrangeBadge>
     </div>
   </div>
 );
