@@ -9,7 +9,7 @@ const PurpleBadge = ({ children }: Props) => (
 );
 
 const OrangeBadge = ({ children }: Props) => (
-    <span class="whitespace-nowrap inline-flex items-center rounded-3xl px-3.5 py-1.5 text-sm font-bold text-[#FFA23B] ring-2 ring-inset ring-[#FFA23B] w-fit">
+    <span class="whitespace-nowrap inline-flex items-center rounded-3xl px-3.5 py-1.5 text-sm font-bold text-orange-700 ring-2 ring-inset ring-orange-700 w-fit">
         {children}
     </span>
 );
