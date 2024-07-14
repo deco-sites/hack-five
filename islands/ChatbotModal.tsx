@@ -22,9 +22,9 @@
     );
 
 
-    const CHAT_HISTORY = [
-    { by: 'Assistente UPets:', message: 'Assistente UPets: Olá! Tudo bem? Fico feliz em saber que está procurando um novo coleguinha para adotar. Posso te ajudar sobre as políticas do nosso site ou na escolha de um novo Pet. No que posso ajudar?' },
-    ];
+const CHAT_HISTORY = [
+    { by: 'Assistente UPets:', message: 'Olá! Tudo bem? Fico feliz em saber que está procurando um novo coleguinha para adotar. Posso te ajudar sobre as políticas do nosso site ou na escolha de um novo Pet. No que posso ajudar?' },
+];
 
 const ChatbotModal = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -53,9 +53,11 @@ const ChatbotModal = () => {
             history: chatHistory.map(entry => `${entry.by}: ${entry.message}`),
         });
 
-        const cleanedResponse = removePrefix(response.response);
+        const cleanedResponse = removePrefix(response.response.trim());
 
-        setChatHistory([...chatHistory, newMessage, { by: 'Assistente UPets', message: cleanedResponse }]);
+        console.log('r', response)
+
+        setChatHistory([...chatHistory, newMessage, { by: 'Assistente UPets:', message: cleanedResponse }]);
     };
 
     return (
