@@ -1,29 +1,29 @@
-import Modal from './Modal.tsx';
-import Icon from "site/components/ui/Icon.tsx";
-import { useState } from 'preact/hooks';
+    import Modal from './Modal.tsx';
+    import Icon from "site/components/ui/Icon.tsx";
+    import { useState } from 'preact/hooks';
+    import type { ChatResponse } from "../loaders/botApi.ts";
+    import loader from "../loaders/botApi.ts";
 
-interface Props {
-    isOpen: boolean;
-    setIsOpen: any;
-}
 
-const ChatbotButton = ({ handleClick }: { handleClick: any }) => (
-    <button
-        onClick={handleClick}
-        class="bg-[#FFA23B] text-[#FFA23B] rounded-btn p-2 shadow-xl border-2 transition-all ease-in-out duration-500 border-transparent hover:border-black"
-        aria-label="Abrir ChatBot"
-    >
-        <Icon id="ia" size={40} />
-    </button>
-);
+    interface Props {
+        isOpen: boolean;
+        setIsOpen: any;
+        ChatResponse?: ChatResponse;
+    }
+
+    const ChatbotButton = ({ handleClick }: { handleClick: any }) => (
+        <button
+            onClick={handleClick}
+            class="bg-[#FFA23B] text-[#FFA23B] rounded-btn p-2 shadow-xl border-2 transition-all ease-in-out duration-500 border-transparent hover:border-black"
+            aria-label="Abrir ChatBot"
+        >
+            <Icon id="ia" size={40} />
+        </button>
+    );
 
 
 const CHAT_HISTORY = [
-    { by: 'chatbot', message: 'Olá, sou o bot do UPets que vai lhe ajudar no processo de encontrar o pet perfeito para ser seu novo amigo!' },
-    { by: 'me', message: 'Oi! Eu queria adotar um gato doido doido.' },
-    { by: 'chatbot', message: 'Rapaz, pois eu tenho uma ótima indicação: Neninho.' },
-    { by: 'me', message: 'Um bicho feio desses, parece um rato...' },
-    { by: 'chatbot', message: 'Não diga isso, ele é muito sensível.\n\nVai querer ou não?' },
+    { by: 'Assistente UPets:', message: 'Olá! Tudo bem? Fico feliz em saber que está procurando um novo coleguinha para adotar. Posso te ajudar sobre as políticas do nosso site ou na escolha de um novo Pet. No que posso ajudar?' },
 ];
 
 const ChatbotModal = () => {
@@ -32,6 +32,33 @@ const ChatbotModal = () => {
     const [chatHistory, setChatHistory] = useState(CHAT_HISTORY);
 
     const [text, setText] = useState('');
+
+    const removePrefix = (message: string) => {
+        const prefix = "Assistente UPets: ";
+        if (message.startsWith(prefix)) {
+            return message.slice(prefix.length);
+        }
+        return message;
+    };
+
+    const handleSendMessage = async () => {
+        if (text.trim().length === 0) return;
+
+        const newMessage = { by: 'Tutor:', message: text };
+        setChatHistory([...chatHistory, newMessage]);
+        
+        setText('');
+        const response = await loader({
+            message: text,
+            history: chatHistory.map(entry => `${entry.by}: ${entry.message}`),
+        });
+
+        const cleanedResponse = removePrefix(response.response.trim());
+
+        console.log('r', response)
+
+        setChatHistory([...chatHistory, newMessage, { by: 'Assistente UPets:', message: cleanedResponse }]);
+    };
 
     return (
         <>
@@ -48,7 +75,7 @@ const ChatbotModal = () => {
                     </div>
                     <div class="flex flex-col p-6 gap-4">
                         <div class="h-[20rem] flex flex-col gap-2 overflow-y-scroll">
-                            {chatHistory.map(({ by, message }) => by === 'chatbot' ? 
+                            {chatHistory.map(({ by, message }) => by === 'Assistente UPets:' ? 
                             <div class="bg-[#ebecff] p-2 w-full grid grid-cols-[40px_1fr] flex-col gap-2 items-center">
                                 <Icon id="ia" size={40} />
                                 <span>
@@ -68,14 +95,7 @@ const ChatbotModal = () => {
                             <textarea value={text} onChange={(e) => setText(e.target.value)} class="h-full w-full focus:outline-none resize-none" />
                         </div>
                         <div class="flex flex-col items-end w-full">
-                            <button class="bg-[#636FFF] text-white font-bold px-6 py-2" onClick={
-                                () => { 
-                                    if (text.trim().length === 0) return;
-
-                                    setChatHistory([...chatHistory, { by: 'me', message: text }]);
-                                    setText('');
-                                }
-                            }>
+                            <button class="bg-[#636FFF] text-white font-bold px-6 py-2" onClick={handleSendMessage}>
                                 Enviar
                             </button>
                         </div>
