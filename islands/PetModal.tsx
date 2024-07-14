@@ -1,47 +1,58 @@
 import Modal from './Modal.tsx';
-import { useState } from 'preact/hooks';
-import { Pet } from "site/loaders/getPets.ts";
+import { Pet } from '../loaders/getPets.ts';
 import Image from "apps/website/components/Image.tsx";
+import Icon from "site/components/ui/Icon.tsx";
+import { OrangeBadge, PurpleBadge } from '../components/ui/Badge.tsx';
+
+const PHONE_NUMBER = '(83) 4002-8922';
 
 interface Props {
-    pet: Pet
+    pet?: Pet | null;
+    isOpen: boolean;
+    setIsOpen: any;
 }
 
-const PetModal = ({ pet }: Props) => {
-    const [isOpen, setIsOpen] = useState(false);
-    
-    const name = pet.name;
-    const imageUrl = 'https://placehold.co/600x400';
-    const location = 'Benvenuto';
-    const akaList = ['Cafuringo', 'Motoneno'];
+const PetModal = ({ pet, isOpen, setIsOpen }: Props) => {
+    if (!pet) return <></>;
+
+    const { name, imageSrc, location, akaList, age } = pet;
+    const phoneNumber = PHONE_NUMBER;
 
     return (
-        <>
-            <button onClick={() => setIsOpen(true)}>
-                Abrir modal
-            </button>
-            
-            <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-                <div class="bg-white self-center relative overflow-hidden rounded-md shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
-                    <div class="bg-purple-900 text-white text-center p-4">
-                        <h1 class="text-4xl">{name}</h1>
-                    </div>
-                    <div class="flex flex-col p-8 gap-6">
-                        <Image class="w-full" src={imageUrl} />
-                        <div class="flex gap-12">
-                            <div>
-                                <p class="font-bold">Também conhecido(a) por:</p>
-                                {akaList.map(nm => <p>{nm}</p>)}
-                            </div>
-                            <div>
-                                <p class="font-bold">Geralmente encontrado em:</p>
-                                {location}
+        <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
+            <div class="bg-white self-center relative overflow-hidden rounded-md shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
+                <div class="bg-purple-900 text-white text-center p-4">
+                    <h1 class="text-4xl">{`${name}, ${age}`}</h1>
+                    <button class="text-white absolute top-4 right-3 outline-none focus:outline-none" onClick={() => setIsOpen(false)}>
+                        <Icon id="x" size={40} />
+                    </button>
+                </div>
+                <div class="flex flex-col p-8 gap-6">
+                    <Image class="w-full" src={imageSrc} />
+                    <div class="flex gap-12">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="font-bold">Também conhecido(a) por:</p>
+                            <div class="flex gap-1">
+                                {akaList?.map(aka => <OrangeBadge>{aka}</OrangeBadge>)}
                             </div>
                         </div>
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="font-bold">Geralmente encontrado em:</p>
+                            <PurpleBadge>{location}</PurpleBadge>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <p class="text-center font-bold text-black">Fale conosco para adoção</p>
+                        <OrangeBadge>
+                            <span class="flex gap-2">
+                                <Icon id="phone" size={20} />
+                                {phoneNumber}
+                            </span>
+                        </OrangeBadge>
                     </div>
                 </div>
-            </Modal>
-        </>
+            </div>
+        </Modal>
     );
 }
 

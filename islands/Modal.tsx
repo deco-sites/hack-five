@@ -20,9 +20,12 @@ const Modal = ({ isOpen, setIsOpen, children }: Props) => {
     return (
       <dialog
         ref={modalRef}
+        onClick={() => setIsOpen(false)}
         class="invisible pointer-events-none fixed grid h-full w-full max-h-none max-w-none m-0 p-0 inset-0 justify-items-center overscroll-contain z-[5] bg-transparent overflow-y-hidden open:pointer-events-auto open:visible backdrop:bg-[rgba(0,0,0,0.5)]" 
       >
-        {children}
+        <div onClick={(e) => e.stopPropagation()}>
+          {children}
+        </div>
       </dialog>
   );
 };

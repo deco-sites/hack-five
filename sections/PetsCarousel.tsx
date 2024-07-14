@@ -1,8 +1,6 @@
-import PetCard from "../components/ui/PetCard.tsx";
-import InfiniteHorizontalScroller from "../islands/InfiniteHorizontalScroller.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import { Pet } from "site/loaders/getPets.ts";
-import PetModal from "../islands/PetModal.tsx";
+import PetsCarouselContainer from "../islands/PetsCarouselContainer.tsx";
 
 interface Props {
   title?: string;
@@ -15,20 +13,15 @@ export default function PetsCarousel({
 }: Props) {
   return (
     <div class="group overflow-hidden flex flex-col items-center py-12 gap-8">
-      <PetModal pet={pets ? pets[0] : {}} />
       <h1 class="text-center font-bold text-4xl">{title}</h1>
-      <InfiniteHorizontalScroller
-        children={pets?.map(({ name, imageSrc }) => (
-          <PetCard key={name} name={name} imageUrl={imageSrc} />
-        ))}
-      />
+      <PetsCarouselContainer pets={pets ?? []} />
       <div class="flex gap-3 items-center">
         <a
           id="more_pets"
           href="/pets"
-          class={`rounded-lg font-bold text-lg btn btn-primary`}
+          class="rounded-lg font-bold text-lg btn btn-primary"
         >
-          Ver todos pets
+          Ver todos os pets
         </a>
       </div>
       <Icon
