@@ -10,7 +10,7 @@ export default {
       animation: {
         scroll: "scroll 30s forwards linear infinite",
         scrollHover: "scroll 30s forwards linear paused infinite",
-        slide: "slide 10s linear infinite",
+        slide: "slide 30s linear infinite",
       },
       keyframes: {
         scroll: {
