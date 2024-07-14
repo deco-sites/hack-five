@@ -12,7 +12,7 @@ interface Props {
 export default function Section({ image }: Props) {
   return (
     <div class="flex justify-center pt-12 px-8 bg-primary">
-      <Image class="w-full max-w-[700px]" src={image} alt="Logo do UPets" width={500} />
+      <Image class="w-full max-w-[700px] h-full max-h-[300px]" src={image} alt="Logo do UPets" />
     </div>
   );
 }
