@@ -57,7 +57,9 @@
     {
       "__resolveType": "site/sections/Video.tsx",
       "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/4167824f-0f93-46fc-ac55-06c7e24795a9",
-      "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/f441c7bd-e851-4b66-b247-47f250ed6766"
+      "video": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/f441c7bd-e851-4b66-b247-47f250ed6766",
+      "doodle": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11580/10f2584c-025c-49c4-8d0d-357ed4d65280",
+      "title": "Saiba mais sobre nós!"
     },
     {
       "__resolveType": "Faq - default"
