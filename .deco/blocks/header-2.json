@@ -1,0 +1,13 @@
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": [
+    {
+      "label": "Inicio",
+      "url": "/"
+    },
+    {
+      "label": "Pets",
+      "url": "/pets"
+    }
+  ]
+}

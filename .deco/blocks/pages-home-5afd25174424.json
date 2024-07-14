@@ -6,6 +6,9 @@
       "__resolveType": "LandingP"
     },
     {
+      "__resolveType": "header-2"
+    },
+    {
       "__resolveType": "site/sections/Hero.tsx",
       "title": "<p>O sistema para você conhecer o seu mais novo melhor amigo</p>",
       "metrics": [

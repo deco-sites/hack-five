@@ -6,6 +6,9 @@
       "__resolveType": "LandingP"
     },
     {
+      "__resolveType": "header-2"
+    },
+    {
       "__resolveType": "site/sections/Pets.tsx",
       "pets": {
         "__resolveType": "site/loaders/getPets.ts"
