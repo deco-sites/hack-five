@@ -21,7 +21,7 @@ const PetModal = ({ pet, isOpen, setIsOpen }: Props) => {
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
       <div class="bg-white self-center relative overflow-hidden rounded-md shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
-        <div class="bg-purple-900 text-white text-center p-4">
+        <div class="bg-[#636FFF] text-white text-center p-4">
           <h1 class="text-4xl">{`${name}, ${age}`}</h1>
           <button
             class="text-white absolute top-4 right-3 outline-none focus:outline-none"

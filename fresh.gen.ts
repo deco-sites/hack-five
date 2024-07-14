@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $ChatbotModal from "./islands/ChatbotModal.tsx";
 import * as $InfiniteHorizontalScroller from "./islands/InfiniteHorizontalScroller.tsx";
 import * as $Modal from "./islands/Modal.tsx";
 import * as $PetModal from "./islands/PetModal.tsx";
@@ -15,6 +16,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/ChatbotModal.tsx": $ChatbotModal,
     "./islands/InfiniteHorizontalScroller.tsx": $InfiniteHorizontalScroller,
     "./islands/Modal.tsx": $Modal,
     "./islands/PetModal.tsx": $PetModal,
