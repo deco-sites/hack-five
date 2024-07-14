@@ -26,6 +26,7 @@ const PetModal = ({ pet, isOpen, setIsOpen }: Props) => {
           <button
             class="text-white absolute top-4 right-3 outline-none focus:outline-none"
             onClick={() => setIsOpen(false)}
+            aria-label="Fechar modal"
           >
             <Icon id="x" size={40} />
           </button>
@@ -37,6 +38,7 @@ const PetModal = ({ pet, isOpen, setIsOpen }: Props) => {
             height={100}
             width={100}
             preload={true}
+            alt={`Foto do pet ${name}`}
           />
           <div class="flex gap-12">
             <div class="flex flex-col gap-2 items-center">

@@ -19,6 +19,7 @@ const PetCard = ({
       src={pet?.imageSrc || ""}
       width={100}
       height={100}
+      alt={`Foto do pet ${pet.name}`}
     />
     <p class="text-2xl font-bold">{pet?.name}</p>
     <div class="flex space-x-2">

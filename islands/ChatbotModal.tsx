@@ -7,10 +7,11 @@ interface Props {
     setIsOpen: any;
 }
 
-const ChatboxButton = ({ handleClick }: { handleClick: any }) => (
+const ChatbotButton = ({ handleClick }: { handleClick: any }) => (
     <button
         onClick={handleClick}
         class="bg-[#FFA23B] text-[#FFA23B] rounded-btn p-2 shadow-xl border-2 transition-all ease-in-out duration-500 border-transparent hover:border-black"
+        aria-label="Abrir ChatBot"
     >
         <Icon id="ia" size={40} />
     </button>
@@ -34,14 +35,14 @@ const ChatbotModal = () => {
 
     return (
         <>
-            <ChatboxButton handleClick={() => setIsOpen(true)} />
+            <ChatbotButton handleClick={() => setIsOpen(true)} />
             <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
                 <div class="fixed right-8 bottom-20 bg-white self-center overflow-hidden rounded-md shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
                     <div class="bg-[#636FFF] text-white text-center p-4">
                         <h1 class="text-bold text-2xl">
                             ChatBot UPets
                         </h1>
-                        <button class="text-white absolute top-4 right-3 outline-none focus:outline-none" onClick={() => setIsOpen(false)}>
+                        <button aria-label="Fechar modal" class="text-white absolute top-4 right-3 outline-none focus:outline-none" onClick={() => setIsOpen(false)}>
                             <Icon id="x" size={40} />
                         </button>
                     </div>

@@ -20,6 +20,7 @@ export default function PetsList({ title, pets, pet, isOpen = false }: Props) {
           <button
             hx-put={useSection({ props: { pet: pet, isOpen: true } })}
             hx-target="#target"
+            aria-label="Abrir detalhes do pet"
           >
             <PetCard pet={pet} />
           </button>
