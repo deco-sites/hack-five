@@ -9,14 +9,24 @@ export default {
     extend: {
       animation: {
         scroll: "scroll 30s forwards linear infinite",
-        scrollHover: "scroll 30s forwards linear paused infinite"
+        scrollHover: "scroll 30s forwards linear paused infinite",
+        slide: "slide 10s linear infinite",
       },
       keyframes: {
         scroll: {
           to: {
-            transform: 'translate(calc(-50% - 0.5rem))'
-          }
-        }
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+        slide: {
+          "0%": {
+            transform: "translateX(17%)",
+          },
+
+          to: {
+            transform: "translateX(-33.3%)",
+          },
+        },
       },
     },
   },

@@ -44,6 +44,8 @@ export type AvailableIcons =
   | "XMark"
   | "white-cat"
   | "white-cat-outline"
+  | "phone"
+  | "x"
   | "glasses-cat"
   | "Zoom";
 

@@ -1,1 +1,35 @@
-{ "title": "FAQs", "__resolveType": "site/sections/Faq.tsx" }
+{
+  "title": "Perguntas frequentes",
+  "__resolveType": "site/sections/Faq.tsx",
+  "questions": [
+    {
+      "title": "Quais tipos de animais estão disponíveis no Upets?",
+      "answer": "<p>O Upets oferece uma variedade de animais de estimação, incluindo cães, gatos, roedores e aves, com perfis detalhados de cada animal.</p>"
+    },
+    {
+      "title": "Como posso buscar um animal de estimação no Upets?",
+      "answer": "<p>O Upets utiliza uma IA avançada para recomendar pets que melhor se adequam ao seu estilo de vida e preferências, facilitando ainda mais a escolha do seu novo melhor amigo.</p>"
+    },
+    {
+      "title": "O Upets cobra alguma taxa pelos seus serviços?",
+      "answer": "<p>Não! É tudo gratis, mas precisamos de doações para continuar nossos trabalhos, caso queira contribuir com nossa iniciativa, entre em contato conosco: tel.: <strong>(83) 4002-8922</strong></p>"
+    },
+    {
+      "title": "Como os animais são cuidados antes de serem listados no Upets?",
+      "answer": "<p>Todos os animais exibidos no Upets passam por uma avaliação de saúde e comportamento realizada pelas organizações de resgate e abrigos parceiros, garantindo que estejam aptos para adoção.</p>"
+    },
+    {
+      "title": "O Upets oferece algum suporte pós-adoção?",
+      "answer": "<p>Sim, o Upets oferece suporte contínuo e recursos úteis, como dicas de cuidados, treinamento e adaptação para ajudar os novos donos a cuidar de seus pets da melhor maneira possível.</p>"
+    },
+    {
+      "title": "O que devo fazer se encontrar um problema com a adoção?",
+      "answer": "<p>Caso encontre algum problema ou tenha dúvidas após a adoção, o Upets oferece suporte e orientação para resolver a situação, trabalhando em conjunto com as organizações parceiras para garantir o bem-estar do animal e da família adotante.</p>"
+    },
+    {
+      "title": "Como posso me envolver com o Upets além da adoção?",
+      "answer": "<p>Além de adotar um animal, você pode apoiar o Upets de várias maneiras, como voluntariando-se, doando para as organizações de resgate parceiras, promovendo a plataforma nas redes sociais e participando de eventos de adoção organizados pelo Upets e seus parceiros.</p>"
+    }
+  ],
+  "description": "Aqui estão algumas dúvidas que vocês pode ter"
+}
