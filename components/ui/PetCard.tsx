@@ -3,20 +3,17 @@ import { PurpleBadge, OrangeBadge } from "./Badge.tsx";
 import { Pet } from "site/loaders/getPets.ts";
 
 interface Props {
-  handleClick: any;
   pet?: Pet;
 }
 
 const PetCard = ({
   pet,
-  handleClick,
 }: Props) => (
   <div 
-    onClick={handleClick}
-    class="cursor-pointer flex max-w-[350px] w-full mb-2 space-y-3.5 flex-col w-full p-5 rounded-lg border-2 shadow-[-4px_4px_0px_rgba(0,0,0)] border-black"
+    class="cursor-pointer flex max-w-[350px] w-full mb-2 space-y-3.5 flex-col w-full p-5 rounded-lg border-2 shadow-[-4px_4px_0px_rgba(0,0,0)] border-black hover:scale-105 transition duration-300 ease-in-out"
   >
     <Image
-      class="w-full"
+      class="w-full h-full min-w-[200px]"
       preload={true}
       loading={"eager"}
       src={pet?.imageSrc || ""}

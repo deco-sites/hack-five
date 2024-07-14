@@ -4,11 +4,8 @@
 
 import * as $_app from "./routes/_app.tsx";
 import * as $ChatbotModal from "./islands/ChatbotModal.tsx";
-import * as $InfiniteHorizontalScroller from "./islands/InfiniteHorizontalScroller.tsx";
 import * as $Modal from "./islands/Modal.tsx";
 import * as $PetModal from "./islands/PetModal.tsx";
-import * as $PetsCardDeck from "./islands/PetsCardDeck.tsx";
-import * as $PetsCarouselContainer from "./islands/PetsCarouselContainer.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -17,11 +14,8 @@ const manifest = {
   },
   islands: {
     "./islands/ChatbotModal.tsx": $ChatbotModal,
-    "./islands/InfiniteHorizontalScroller.tsx": $InfiniteHorizontalScroller,
     "./islands/Modal.tsx": $Modal,
     "./islands/PetModal.tsx": $PetModal,
-    "./islands/PetsCardDeck.tsx": $PetsCardDeck,
-    "./islands/PetsCarouselContainer.tsx": $PetsCarouselContainer,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

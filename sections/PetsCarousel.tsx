@@ -1,18 +1,24 @@
 import Icon from "../components/ui/Icon.tsx";
 import { Pet } from "site/loaders/getPets.ts";
-import PetsCarouselContainer from "../islands/PetsCarouselContainer.tsx";
+import PetsCarouselContainer from "site/components/ui/PetsCarouselContainer.tsx";
+import PetModal from "site/components/ui/PetModal.tsx";
 
 interface Props {
   title?: string;
   pets?: Pet[] | null;
+  pet?: Pet;
+  isOpen?: boolean;
 }
 
 export default function PetsCarousel({
   title = "Nossos queridos",
   pets,
+  pet,
+  isOpen = false,
 }: Props) {
   return (
-    <div class="group overflow-hidden flex flex-col items-center py-12 gap-8">
+    <div id="target" class="group overflow-hidden flex flex-col items-center py-12 gap-8">
+      <PetModal pet={pet} isOpen={isOpen} />
       <h1 class="text-center font-bold text-4xl">{title}</h1>
       <PetsCarouselContainer pets={pets ?? []} />
       <div class="flex gap-3 items-center">
