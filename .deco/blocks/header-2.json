@@ -2,7 +2,7 @@
   "__resolveType": "site/sections/Header.tsx",
   "navigation": [
     {
-      "label": "Inicio",
+      "label": "Início",
       "url": "/"
     },
     {

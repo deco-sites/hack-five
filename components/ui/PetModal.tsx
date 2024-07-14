@@ -18,9 +18,9 @@ const PetModal = ({ pet, isOpen }: Props) => {
   return (
     <div id="pet-modal">
       <Modal isOpen={isOpen} id="target">
-        <div class="bg-white self-center relative overflow-hidden rounded-md shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
+        <div class="bg-white self-center relative overflow-hidden rounded-md shadow-xl sm:my-8 sm:w-full max-w-[20rem]">
           <div class="bg-purple-900 text-white text-center p-4">
-            <h1 class="text-4xl">{`${pet?.name}, ${pet?.age}`}</h1>
+            <h1 class="text-3xl">{`${pet?.name}, ${pet?.age}`}</h1>
             <button
               class="text-white absolute top-4 right-3 outline-none focus:outline-none"
               hx-put={useSection({ props: { isOpen: false } })}

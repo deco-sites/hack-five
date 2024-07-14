@@ -1,6 +1,6 @@
-# Blog — deco.cx template 
+# UPets (Powered by deco.cx)
 
-Welcome to your [deco.cx](https://deco.cx) site!
+Conheça seu novo melhor amigo!
 
 ## Usage
 
